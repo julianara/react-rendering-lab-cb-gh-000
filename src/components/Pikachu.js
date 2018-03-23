@@ -28,8 +28,10 @@ class Pikachu extends React.Component {
     });
   }
 
-  componentDidUpdate() {
-    
+  componentDidUpdate(orevProps, prevState) {
+    if (this.state.size !== prevState.size) {
+      
+    }
   }
   
   render() {
